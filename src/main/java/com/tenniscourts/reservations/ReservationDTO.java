@@ -1,6 +1,7 @@
 package com.tenniscourts.reservations;
 
 import com.tenniscourts.schedules.ScheduleDTO;
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,6 +18,8 @@ import java.math.BigDecimal;
 @Setter
 @Builder
 @Data
+@ApiModel(value = "Reservation", description = "\n" +
+        "Consists of the entity representing the tennis court booking information.")
 public class ReservationDTO {
 
     private Long id;

@@ -1,5 +1,5 @@
-insert into guest(id, name) values(null, 'Roger Federer');
-insert into guest(id, name) values(null, 'Rafael Nadal');
+insert into guest(id, name) values(1, 'Roger Federer');
+insert into guest(id, name) values(2, 'Rafael Nadal');
 
 insert into tennis_court(id, name) values(null, 'Roland Garros - Court Philippe-Chatrier');
 

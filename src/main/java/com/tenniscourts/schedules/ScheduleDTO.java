@@ -2,6 +2,7 @@ package com.tenniscourts.schedules;
 
 import com.tenniscourts.tenniscourts.TennisCourtDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModel;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,6 +11,8 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@ApiModel(value = "Schedule", description = "\n" +
+        "Consists of the entity that represents the tennis court booking Schedule.")
 public class ScheduleDTO {
 
     private Long id;

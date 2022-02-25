@@ -1,6 +1,7 @@
 package com.tenniscourts.tenniscourts;
 
 import com.tenniscourts.schedules.ScheduleDTO;
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -17,6 +18,8 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ApiModel(value = "Tennis Court", description = "\n" +
+        "Consists of the entity representing the tennis court.")
 public class TennisCourtDTO {
 
     private Long id;
